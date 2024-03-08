@@ -43,7 +43,7 @@ if [[ -d $input_file && -d $output_file ]]; then
     done
 
     if [ "$target_format_for_bulk" == "png" ]; then
-        echo "*This is a generated file from github actions, please do not change it by hand*" >> $readme
+        echo "*This file has been auto-generated at $(date)*" >> $readme
     fi
 
 elif [[ -f $input_file ]]; then
